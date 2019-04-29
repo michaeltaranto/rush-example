@@ -26,15 +26,15 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "2.15.1",
+  // "pnpmVersion": "2.15.1",
 
   // "npmVersion": "4.5.0",
-  // "yarnVersion": "1.9.4",
+  "yarnVersion": "1.15.2",
 
   /**
    * Options that are only used when the PNPM package manager is selected
    */
-  "pnpmOptions": {
+  // "pnpmOptions": {
 
     /**
      * If true, then Rush will add the "--strict-peer-dependencies" option when invoking PNPM.
@@ -46,7 +46,7 @@
      * The default value is false to avoid legacy compatibility issues.
      * It is strongly recommended to set strictPeerDependencies=true.
      */
-    "strictPeerDependencies": true,
+    // "strictPeerDependencies": true,
 
 
     /**
@@ -59,7 +59,7 @@
      * can be reused; this is more similar to NPM's algorithm.
      */
     // "resolutionStrategy": "fast"
-  },
+  // },
 
   /**
    * Older releases of the NodeJS engine may be missing features required by your system.
@@ -162,17 +162,17 @@
      * IMPORTANT: Because these are regular expressions encoded as JSON string literals,
      * RegExp escapes need two backspashes, and ordinary periods should be "\\.".
      */
-    "allowedEmailRegExps": [
-      "[^@]+@users\\.noreply\\.github\\.com",
-      "travis@example\\.org"
-    ],
+    // "allowedEmailRegExps": [
+    //   "[^@]+@users\\.noreply\\.github\\.com",
+    //   "travis@example\\.org"
+    // ],
 
     /**
      * When Rush reports that the address is malformed, the notice can include an example
      * of a recommended email.  Make sure it conforms to one of the allowedEmailRegExps
      * expressions.
      */
-    "sampleEmail": "mrexample@users.noreply.github.com",
+    // "sampleEmail": "mrexample@users.noreply.github.com",
 
     /**
      * The commit message to use when committing changes during 'rush publish'.
@@ -181,7 +181,7 @@
      * you might configure your system's trigger to look for a special string such as "[skip-ci]"
      * in the commit message, and then customize Rush's message to contain that string.
      */
-    "versionBumpCommitMessage": "Applying package updates. [skip-ci]"
+    // "versionBumpCommitMessage": "Applying package updates. [skip-ci]"
   },
 
   "repository": {
@@ -200,7 +200,7 @@
      * your PR branch, and in this situation "rush change" will also automatically invoke "git fetch"
      * to retrieve the latest activity for the remote master branch.
      */
-    "url": "https://github.com/Microsoft/rush-example"
+    "url": "https://github.com/michaeltaranto/rush-example"
   },
 
   /**
@@ -289,7 +289,7 @@
       /**
        * The NPM package name of the project (must match package.json)
        */
-      "packageName": "my-app",
+      "packageName": "@mjt01/my-app",
 
       /**
        * The path to the project folder, relative to the rush.json config file.
@@ -334,13 +334,13 @@
     },
 
     {
-      "packageName": "my-controls",
+      "packageName": "@mjt01/my-controls",
       "projectFolder": "libraries/my-controls",
       "reviewCategory": "production"
     },
 
     {
-      "packageName": "my-toolchain",
+      "packageName": "@mjt01/my-toolchain",
       "projectFolder": "tools/my-toolchain",
       "reviewCategory": "tools"
     }

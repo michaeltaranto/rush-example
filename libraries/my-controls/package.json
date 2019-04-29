@@ -1,5 +1,5 @@
 {
-  "name": "my-controls",
+  "name": "@mjt01/my-controls",
   "version": "1.0.0",
   "description": "An example library project",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "my-toolchain": "^1.0.0",
+    "@mjt01/my-toolchain": "^1.0.0",
     "typescript": "^3.0.3"
   }
 }
